@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -34,36 +34,41 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
 
-    
+    <!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+    <link rel="stylesheet" property="stylesheet" href="utilidades/rs-plugin/css/settings.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/rs-plugin-styles.css" type="text/css" />
 
-    <!--UTILIDADES SCRIPT-->
+    <!--VENDOR SCRIPT-->
     <script src="utilidades/jquery/jquery-1.11.2.min.js"></script>
     <script src="utilidades/plugins-compressed.js"></script>
-    
-    
+
+    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+    <script type="text/javascript" src="utilidades/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="utilidades/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
 </head>
 
 <body class="wide">
-    
 
-    <!-- ENVOLVENTE -->
-    <div class="wrapper">
-        <!-- accesos rápidos -->
+
+	<!-- WRAPPER -->
+	<div class="wrapper">
+		<!-- TOPBAR -->
         <div id="topbar" class="">
             <div class="container">
                 <div class="topbar-dropdown">
-                    <div class="title"><i class="fa fa-external-link-square"></i>Ir a INE.MX</div>
+                    <div class="title"><i class="fa fa-newspaper-o"></i>Central Electoral</div>
                 </div>
                 <div class="topbar-dropdown">
-                    <div class="title">Accesos rápidos <i class="fa fa-caret-down"></i></div>
+                    <div class="title">Mi perfil es <i class="fa fa-caret-down"></i></div>
                     <div class="dropdown-list">
-                        <a class="list-entry" href="#">Obtener mi credencial</a>
-                        <a class="list-entry" href="#">Activar credencial</a>
-                        <a class="list-entry" href="#">Registrarme al padrón</a>
-                        <a class="list-entry" href="#">¿Cómo votar?</a>
-                        <a class="list-entry" href="#">Elecciones 2018</a>
-                        <a class="list-entry" href="#">Comisión del voto</a>
+                        <a class="list-entry" href="perfil-extranjero.html">Mexicana(o) en el extranjero</a>
+                        <a class="list-entry" href="perfil-primervotante.html">Primer votante</a>
+                        <a class="list-entry" href="perfil-actorpolitico.html">Actor Político</a>
+                        <a class="list-entry" href="perfil-proveedor.html">Proveedor</a>
+                        <a class="list-entry" href="perfil-estudiante.html">Estudiante</a>
+                        <a class="list-entry" href="perfil-investigacion.html">Investigador o Academia</a>
+                        <a class="list-entry" href="perfil-medios.html">Medio de comunicación</a>
                     </div>
                 </div>
 
@@ -81,7 +86,7 @@
 
             </div>
         </div>
-        <!-- /accesos rápidos -->
+        <!-- /TOPBAR -->
 
         <!-- ENCABEZADO -->
         <header id="header" class="">
@@ -169,7 +174,7 @@
                                                     <div class="col-md-3">
                                                         <ul>
                                                             <li class="mega-menu-title">Solicitud de Credencial</li>
-                                                            <li> <a href="credencial-proceso.html">Conoce el proceso</a> </li>
+                                                            <li> <a href="#">Conoce el proceso</a> </li>
                                                             <li> <a href="#">Prepara tus papeles</a> </li>
                                                             <li> <a href="#">Programa una cita</a> </li>
                                                             <li> <a href="#">Consulta el estatus</a> </li>
@@ -178,7 +183,7 @@
                                                     <div class="col-md-3">
                                                         <ul>
                                                             <li class="mega-menu-title">Activa tu credencial</li>
-                                                            <li> <a href="credencial-proceso.html">Conoce el proceso</a> </li>
+                                                            <li> <a href="#">Conoce el proceso</a> </li>
                                                             <li> <a href="#">Activa tu credencial</a> </li>
                                                             <li> <a href="#">Preguntas Frecuentes</a> </li>
                                                             <li> <a href="#">Llama a INETel</a> </li>
@@ -261,285 +266,310 @@
         </header>
         <!-- /NCABEZADO -->
 
-        
-        <!-- ENCABEZADO BUSQUEDA -->
-        <section class="no-margin p-t-50 p-b-50" style="background-image:url(images/ine-credencial-elector.jpg)">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 col-sm-12">
-                        <h2 class="m-b-20 m-t-50 text-light">Votar desde el extranjero hola mundo</h2>
-                        <p class="text-light">Aquí encontrarás información exclusiva sobre como obtener tu credencial de elector y participar desde el extranjero en las elecciones de México.</p>
-                        <div class="m-b-20">
-                            <form id="widget-subscribe-form" action="" role="form" method="post">
-                                <div class="input-group input-group-lg">
-                                    <input type="email" aria-required="true" name="widget-subscribe-form-email" class="form-control required email" placeholder="Buscar en voto extranjero">
-                                    <span class="input-group-btn">
-                                        <button type="submit" id="widget-subscribe-submit-button" class="btn btn-primary">Buscar</button>
-                                    </span>
-                                </div>
-                            </form>
-                        </div>
-                        <p class="text-light">Puedes encontrar enformación del INE en el sitio oficial</p>
-                    </div>
-                    <div class="col-md-6 col-md-offset-1 m-t-40">
-                        &nbsp;
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /ENCABEZADO BUSQUEDA -->
 
-        <!-- ACCESIBILIDAD -->
+		<!-- Titulo de la página -->
+        <section id="page-title" class="page-title-video text-light" data-vide-bg="images/ine-video.mp4" data-vide-options="position: 0% 45%">
+		
+		    <div class="container" style="height:450px;">
+		        <div class="page-title col-md-8 p-t-100 p-b-100" data-animation="fadeInDown" data-animation-delay="300">
+		        	
+		        </div>
+		        <div data-animation="fadeInDown" data-animation-delay="800">
+		            
+		        </div>
+		    </div>
+		</section>
+		<!-- /Titulo de la página -->
+
+		<!-- Información de sección -->
         <section class="background-grey no-margin no-padding">
             <div class="container">
-                <div class="row p-t-10 p-b-10">
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="fa-hover text-center p-t-20 p-b-20"><i class="fa fa-calendar-check-o"></i> <a href="#" target="_blank">Programa tu cita</a></div>
+                <div class="row p-t-10 p-b-10 indice-seccion">
+                    <div class="col-xs-6 col-sm-8">
+                        <div class="fa-hover p-t-5 p-b-5"><i class="fa fa-map-pin"></i> Tema: <a href="credencial.html">CREDENCIAL DE ELECTOR</a></div>
                     </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="fa-hover text-center p-t-20 p-b-20"><i class="fa fa-check-circle-o"></i> <a href="#">Activa tu credencial</a></div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="fa-hover text-center p-t-20 p-b-20"><i class="fa fa-edit"></i> <a href="#" target="_blank">Regístrate para votar</a></div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="fa-hover text-center p-t-20 p-b-20"><i class="fa fa-users"></i> <a href="#" target="_blank">Elecciones 2018</a></div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="fa-hover p-t-5 p-b-5"><i class="fa fa-map-marker"></i> Área: DERFE y JLYD</div>
                     </div>
                 </div>
             </div>
         </section>
         <hr class="no-margin">
-        <!-- /ACCESIBILIDAD -->
+        <!-- /Información de sección -->
 
-        <!-- Noticia 2 columnas -->
-        <section class="no-padding">
+        <!-- Texto destacado -->
+        <section class="background-grey no-margin no-padding">
             <div class="container">
-                <div class="row m-t-40">
-                    <div class="col-md-6 m-b-30">
-                        <img class="img-responsive m-b-20" alt="Video sobre voto en el extranjero" src="images/firma-convenio.jpg">
+                <div class="row p-t-40 p-b-40 ">
+                    <div class="col-xs-6 col-sm-8">
+                        <h2>Sólo las credenciales vigentes pueden votar.</h2>
+                        <p class="lead">En este momento, existen cuatro modelos de credencial vigentes y válidos  para  ejercer  tu  derecho  al  voto  y  —por  extensión  legal—  como  instrumento  de  identificación  oficial,  tal y como se estableció desde la emisión del primer modelo de Credencial para Votar.</p>
+                        <p>Las llamadas credenciales “03”, así como aquellas “sin un 15” al reverso, ya no son válidas para la próxima elección federal de 2015, ni como medio de identificación oficial. Ahora, la vigencia de cada credencial es de diez años a partir de su emisión, por lo que deberán renovarse cumplido este periodo.</p>
                     </div>
-                    <div class="col-md-6" data-animation="fadeInUp" data-animation-delay="200">
-                        <div class="p-t-20">
-                            <h6 class="no-margin">Firma de convenio</h6>
-                            <h2 class="m-b-20"><a href="detalle-noticia.html">@INEMexico, @CasaPueblaNY y #FuerzaMigrante</a></h2>
-                            <p class="lead">Firma de Convenio entre el Instituto Nacional Electoral, Casa Puebla de Nueva York y Fuerza Migrante.</p>
-                            
-                            <p>En estos momentos se firma el convenio de colaboración entre  @INEMexico, @CasaPueblaNY y #FuerzaMigrante...</p>
-                        </div>
-                    </div>
-
+                    <div class="col-xs-6 col-sm-4"><img src="images/tipos-credencial-vigente.png"></div>
                 </div>
             </div>
-
         </section>
-        <!-- /Noticia 2 columnas -->
         <hr class="no-margin">
 
-        <!-- Noticia 2 columnas -->
-        <section class="no-padding">
-            <div class="container">
-                <div class="row m-t-40">
-                    <div class="col-md-6 m-b-30">
-                        <img class="img-responsive m-b-20" alt="Video sobre voto en el extranjero" src="images/mexico-donde-tu-estas.jpg">
-                    </div>
-                    <div class="col-md-6" data-animation="fadeInUp" data-animation-delay="200">
-                        <div class="p-t-20">
-                            <h6 class="no-margin">Conoce el trámite para participar</h6>
-                            <h2 class="m-b-20"><a href="detalle-noticia.html">México está donde estás tú</a></h2>
-                            <p class="lead">Participa en las grandes decisiones políticas del país; aunque no vivas en México, sigues siendo ciudadano mexicano y aportas al fortalecimiento de la democracia, beneficiando a tus familiares y amigos que aún viven aquí.</p>
-                            
-                            <p>Si ya cuentas con tu credencial, <a href="credencial-vigencia.html">verifica la vigencia</a>. Recuerda que no todas las credenciales sirven para identificarte y votar.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-        <!-- /Noticia 2 columnas -->
-
-        <hr class="no-margin">
-        
-
-        <!-- Destacadas sección -->
-        <section class="no-padding">
-            <div class="container m-t-40">
-                <h3 class="no-margin p-b-40">Información destacada</h3>
+        <!-- VERIFICAR VIGENCIA CREDENCIALES A B C -->
+        <section>
+        	<div class="container">
                 <div class="row">
+                    <div class="col-md-4">
+                        <h3>Verificar credenciales modelo A, B y C</h3>
+                        <p>Estas credenciales se emitieron durante los años 1992 a 2008</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="img-responsive m-b-20" alt="Solicitud de credencial" src="images/credencial_principal(3).png">
+                        <hr>
+                        <form class="form-gray-fields">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="upper" for="name">Clave de elector</label>
+                                        <input type="text" class="form-control required" name="enviaClave" placeholder="000000000000000000" id="clave" aria-required="true">
+                                        <small>Escribe los 19 dígitos de la clave</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="upper" for="email">Número de emisión</label>
+                                        <input type="email" class="form-control required email" name="enviaEmision" placeholder="00" id="emision" aria-required="true">
+                                        <small>Escribe los 2 dígitos del número</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="upper" for="phone">Número OCR</label>
+                                        <input type="text" class="form-control required" name="enviaOCR" placeholder="0000000000000" id="ocr" aria-required="true">
+                                        <small>Escribe los 13 dígitos del número</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="upper" for="company">Verificación</label>
+                                        <input type="text" class="form-control required" name="verificacion" placeholder="AAAA" id="verifica" aria-required="true">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i>&nbsp;Consultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="m-t-40 m-b-40">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Verificar credenciales modelo D y E</h3>
+                        <p>Estas credenciales se emitieron a partir de 2013</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="img-responsive m-b-20" alt="Solicitud de credencial" src="images/credencial_principal(4).png">
+                        <hr>
+                        <form class="form-gray-fields">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="upper" for="name">Código de Identificación Oficial</label>
+                                            <input type="text" class="form-control required" name="codigo" placeholder="0000000000" id="codigo" aria-required="true">
+                                            <small>Escribe los 13 dígitos del número</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="upper" for="email">Verificación</label>
+                                        <input type="email" class="form-control required email" name="verifica" placeholder="AAAAAA" id="verifica" aria-required="true">
+                                        <small>Escribe la verificación</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i>&nbsp;Consultar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        	</div>
+        </section>
+        <hr class="no-margin">
+        <!-- /VERIFICAR VIGENCIA -->
 
+        <!-- Revisar por robo o extravio -->
+        <section class="background-grey">
+            <div class="container">
+                <div class="row">
                     <div class="col-md-4">
-                        <div class="card-item" data-animation="fadeInUp" data-animation-delay="0">
-                            <img alt="" src="images/cards/card-1.png">
-                            <div class="contenido">
-                                <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                <p>Texto corto de descripción para informar sobre el contexto.</p>
-                            </div>
-                        </div>
+                        <h3>Credenciales robadas o extraviadas</h3>
+                        <p>Para evitar un mal uso de tus datos, es necesario que reportes tu credencial cuando la perdiste o la robaron...una vez hecho el trámite verifica en este formulario que tu credencial haya sido dada de baja...</p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card-item" data-animation="fadeInUp" data-animation-delay="100">
-                            <img alt="" src="images/cards/card-2.png">
-                            <div class="contenido">
-                                <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                <p>Texto corto de descripción para informar sobre el contexto.</p>
+                    <div class="col-md-8">
+                        <form class="form-gray-fields">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="upper" for="name">Folio de reporte</label>
+                                            <input type="text" class="form-control required" name="senderName" placeholder="000-00" id="name3" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="upper" for="email">Verificación</label>
+                                        <input type="email" class="form-control required email" name="senderEmail" placeholder="Escribe la verificaión" id="email3" aria-required="true">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-item" data-animation="fadeInUp" data-animation-delay="200">
-                            <img alt="" src="images/cards/card-3.png">
-                            <div class="contenido">
-                                <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                <p>Texto corto de descripción para informar sobre el contexto.</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i>&nbsp;Consultar</button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-item" data-animation="fadeInUp" data-animation-delay="300">
-                            <img alt="" src="images/cards/card-4.png">
-                            <div class="contenido">
-                                <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                <p>Texto corto de descripción para informar sobre el contexto.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-item" data-animation="fadeInUp" data-animation-delay="400">
-                            <img alt="" src="images/cards/card-5.png">
-                            <div class="contenido">
-                                <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                <p>Texto corto de descripción para informar sobre el contexto.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-item" data-animation="fadeInUp" data-animation-delay="500">
-                            <img alt="" src="images/cards/card-6.png">
-                            <div class="contenido">
-                                <h4>Acceso principal a nota destacada sobre este tema</h4>
-                                <p>Texto corto de descripción para informar sobre el contexto.</p>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- /Destacadas sección -->
-        
+        <!-- /DOCUMENTOS NECESARIOS -->
+        <hr class="no-margin">
 
-        <!-- FOOTER -->
+
+        <section class="background-morado text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>¿Necesitas ayuda?</h2>
+                        <h3>Llama sin costo al <strong>01 800 433 2000</strong>. La llamada no tiene costo y puedes realizarla desde cualquier parte del país.</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Puede interesarte:</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- FOOTER -->
     <footer id="footer">
-        <section class=" background-grey no-margin no-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="accordion clean m-t-20">
-                        <div class="ac-item">
-                            <h4 class="ac-title tit-opinion">¿Todo bien con esta página? Nos gustaría saber tu opinión </h4>
-                            <div class="ac-content " style="display: none;">
+    <section class=" background-grey no-margin no-padding">
+    <div class="container">
+    <div class="row">
+    <div class="accordion clean m-t-20">
+    <div class="ac-item">
+    <h4 class="ac-title tit-opinion">¿Todo bien con esta página? Nos gustaría saber tu opinión </h4>
 
-                                <div class="col-md-6">
-                                    <label class="upper" for="name">¿Te ha sido útil la información de la página?</label>
-                                    <p>
-                                      <input type="radio" name="1" value="si" id="" aria-label="Si" class="">
-                                      <span class="m-10">Sí</span>
-                                      <input type="radio" name="1" value="no" id="" aria-label="No">
-                                      <span class="m-10">No</span>
-                                    </p>
-                                    <label class="upper" for="name">Envíanos tus dudas, comentarios y/o sugerencias :</label>
-                                    <p>
-                                      <input type="radio" name="2" value="Correo para recibir respuesta" id="group_" aria-label="No" checked="">
-                                      <span class="m-10">Correo para recibir respuesta</span>
-                                      <input type="radio" name="2" value="Anónimo" id="" aria-label="Si">
-                                      <span class="m-10">Anónimo</span>
-                                    </p>
-                                </div>
-                                <div class="col-md-6">
-                                  <p>
-                                    <label class="upper" for="name"> * Correo electrónico </label>
-                                    <input type="email" class="form-control required" name="senderName" placeholder="Tu correo electrónico" id="name" aria-required="true">
-                                  </p>
-                                  
-                                  <p>
-                                    <label class="upper" for="comment">Envíanos tus comentarios</label>
-                                    <textarea class="form-control required" name="comment" rows="9" placeholder="Escribe tu comentario" id="comment" aria-required="true"></textarea>
-                                  </p>
-                                  <button type="submit" class="btn btn-primary" id="encuesta">Enviar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr class="no-margin">
-        <section class="p-t-30 p-b-0 background-pie">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-4"><img src="images/blog/bg-footer.png"></div>
-              <div class="col-sm-4">
-                <div class="carousel portfolio-basic-image" data-carousel-col="1"> <img alt="image" src="images/blog/1.jpg"> <img alt="image" src="images/blog/2.jpg"> <img alt="image" src="images/blog/3.jpg"> </div>
-              </div>
-              <div class="col-sm-2">
-                <h6 class="widget-title">Páginas Útiles</h6>
-                <ul class="list no-padding listafooter">
-                  <li> <a href="#">Contacto</a> </li>
-                  <li> <a href="#">Datos personales</a> </li>
-                  <li> <a href="#">Preguntas frecuentes</a> </li>
-                  <li> <a href="#">Redes sociales</a> </li>
-                  <li> <a href="#">Mapa del sitio</a> </li>
-                  <li> <a href="#">Creative Commons</a> </li>
-                  <li> <a href="#">Accesibilidad</a> </li>
-                </ul>
-              </div>
-              <div class="col-sm-2">
-                <h6 class="widget-title">Páginas Principales</h6>
-                <ul class="list no-padding listafooter">
-                  <li> <a href="#">Sobre INE</a> </li>
-                  <li> <a href="#">Comunidad INE </a> </li>
-                  <li> <a href="#">Credencial de Elector </a> </li>
-                  <li> <a href="#">Voto y Elecciones </a> </li>
-                  <li> <a href="#">Voto en el extranjero</a> </li>
-                  <li> <a href="#">Transparencia</a> </li>
-                  <li> <a href="#">Central Electoral</a> </li>
-                </ul>
-              </div>
-            </div>
+    <div class="ac-content " style="display: none;">
+
+    <div class="col-md-6">
+    <label class="upper" for="name">¿Te ha sido útil la información de la página?</label>
+    <p>
+      <input type="radio" name="1" value="si" id="" aria-label="Si" class="">
+      <span class="m-10">Sí</span>
+      <input type="radio" name="1" value="no" id="" aria-label="No">
+      <span class="m-10">No</span></p>
+    <label class="upper" for="name">Envíanos tus dudas, comentarios y/o sugerencias :</label>
+    <p>
+      <input type="radio" name="2" value="Correo para recibir respuesta" id="group_" aria-label="No" checked="">
+      <span class="m-10">Correo para recibir respuesta</span>
+      <input type="radio" name="2" value="Anónimo" id="" aria-label="Si">
+      <span class="m-10">Anónimo</span> </p>
+
+    </div>
+    <div class="col-md-6">
+      <p>
+        <label class="upper" for="name"> * Correo electrónico </label>
+        <input type="email" class="form-control required" name="senderName" placeholder="Tu correo electrónico" id="name" aria-required="true">
+      </p>
+
+      <p>
+        <label class="upper" for="comment">Envíanos tus comentarios</label>
+        <textarea class="form-control required" name="comment" rows="9" placeholder="Escribe tu comentario" id="comment" aria-required="true"></textarea>
+      </p>
+      <button type="submit" class="btn btn-primary" id="encuesta">Enviar</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <hr class="no-margin">
+    <section class="p-t-30 p-b-0 background-pie" style="background-image:url(images/footer.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="carousel portfolio-basic-image" data-carousel-col="1"> <img alt="image" src="images/blog/1.png"> <img alt="image" src="images/blog/1.png"> <img alt="image" src="images/blog/1.png"> </div>
           </div>
-        </section>
-        <hr class="no-margin">
-        <section class="no-margin no-padding">
-          <div class="container">
-            <div class="row text-center p-t-40 p-b-20">
-              <div class="col-sm-4"> 01 800 433 2000
-                <p>Desde cualquier parte del país sin costo</p>
-              </div>
-              <div class="col-sm-4"> 1 (866) 986 8306
-                <p>Desde Estados Unidos sin costo</p>
-              </div>
-              <div class="col-sm-4"> +52 (55) 5481 9897
-                <p>Desde otros países por cobrar</p>
-              </div>
-            </div>
+          <div class="col-sm-2">
+            <h6 class="widget-title">Páginas Útiles</h6>
+            <ul class="list no-padding listafooter">
+              <li> <a href="#">Contacto</a> </li>
+              <li> <a href="#">Datos personales</a> </li>
+              <li> <a href="#">Preguntas frecuentes</a> </li>
+              <li> <a href="#">Redes sociales</a> </li>
+              <li> <a href="#">Mapa del sitio</a> </li>
+              <li> <a href="#">Creative Commons</a> </li>
+              <li> <a href="#">Accesibilidad</a> </li>
+            </ul>
           </div>
-        </section>
-        <hr class="no-margin">
+          <div class="col-sm-2">
+            <h6 class="widget-title">Páginas Principales</h6>
+            <ul class="list no-padding listafooter">
+              <li> <a href="#">Sobre INE</a> </li>
+              <li> <a href="#">Comunidad INE </a> </li>
+              <li> <a href="#">Credencial de Elector </a> </li>
+              <li> <a href="#">Voto y Elecciones </a> </li>
+              <li> <a href="#">Voto en el extranjero</a> </li>
+              <li> <a href="#">Transparencia</a> </li>
+              <li> <a href="#">Central Electoral</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="no-margin">
+    <section class="no-margin no-padding">
+      <div class="container">
+        <div class="row text-center p-t-40 p-b-20">
+          <div class="col-sm-4"> 01 800 433 2000
+            <p>Desde cualquier parte del país sin costo</p>
+          </div>
+          <div class="col-sm-4"> 1 (866) 986 8306
+            <p>Desde Estados Unidos sin costo</p>
+          </div>
+          <div class="col-sm-4"> +52 (55) 5481 9897
+            <p>Desde otros países por cobrar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="no-margin">
     </footer>
 <!-- END: FOOTER -->
 
-    </div>
-    <!-- END: WRAPPER -->
+</div>
+<!-- END: WRAPPER -->
 
-    <!-- GO TOP BUTTON -->
-    <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
+<!-- GO TOP BUTTON -->
+<a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- Funciones js -->
-    <script src="js/theme-functions.js"></script>
+	<!-- Theme Base, Components and Settings -->
+	<script src="js/theme-functions.js"></script>
 
-    <!-- Custom js file -->
-    <script src="js/custom.js"></script>
-
+<!-- Custom js file -->
+<script src="js/custom.js"></script>
 
 
 </body>
-
 </html>

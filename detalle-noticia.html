@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>INE | Instito Nacional Electoral</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="utilidades/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="utilidades/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="utilidades/animateit/animate.min.css" rel="stylesheet">
+
+    <!-- Utilidades css -->
+    <link href="utilidades/owlcarousel/owl.carousel.css" rel="stylesheet">
+    <link href="utilidades/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Estilos css -->
+    <link href="css/base-ine.css" rel="stylesheet">
+    <link href="css/elementos-ine.css" rel="stylesheet">
+    <link href="css/color-ine.css" rel="stylesheet">
+    <link href="css/responsivo.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/estilo-ine.css">
+    <!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+    <!-- FUENTES GOOGLE -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+
+    <!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+    <link rel="stylesheet" property="stylesheet" href="utilidades/rs-plugin/css/settings.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/rs-plugin-styles.css" type="text/css" />
+
+    <!--VENDOR SCRIPT-->
+    <script src="utilidades/jquery/jquery-1.11.2.min.js"></script>
+    <script src="utilidades/plugins-compressed.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+    <script type="text/javascript" src="utilidades/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="utilidades/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+</head>
+
+<body class="wide">
+
+
+	<!-- WRAPPER -->
+	<div class="wrapper">
+		<!-- TOPBAR -->
+        <div id="topbar" class="">
+            <div class="container">
+                <div class="topbar-dropdown">
+                    <div class="title"><i class="fa fa-newspaper-o"></i>Central Electoral</div>
+                </div>
+                <div class="topbar-dropdown">
+                    <div class="title">Mi perfil es <i class="fa fa-caret-down"></i></div>
+                    <div class="dropdown-list">
+                        <a class="list-entry" href="perfil-extranjero.html">Mexicana(o) en el extranjero</a>
+                        <a class="list-entry" href="perfil-primervotante.html">Primer votante</a>
+                        <a class="list-entry" href="perfil-actorpolitico.html">Actor Político</a>
+                        <a class="list-entry" href="perfil-proveedor.html">Proveedor</a>
+                        <a class="list-entry" href="perfil-estudiante.html">Estudiante</a>
+                        <a class="list-entry" href="perfil-investigacion.html">Investigador o Academia</a>
+                        <a class="list-entry" href="perfil-medios.html">Medio de comunicación</a>
+                    </div>
+                </div>
+
+                <div class="hidden-xs">
+                    <div class="social-icons social-icons-colored-hover">
+                        <ul>
+                            <li class="social-facebook"><a href="https://www.facebook.com/INEMexico/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-twitter"><a href="https://twitter.com/INEMexico" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-youtube"><a href="https://www.youtube.com/user/IFETV" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                            <li class="social-linkedin"><a href="contacto.html"><i class="fa fa-envelope"></i></a></li>
+                            <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /TOPBAR -->
+
+        <!-- ENCABEZADO -->
+        <header id="header" class="">
+            <div id="header-wrap">
+                <div class="container">
+
+                    <!--LOGO-->
+                    <div id="logo">
+                        <a href="index.html" class="logo" data-dark-logo="images/logo-dark.png">
+                            <img src="images/logo.png" alt="Logo INE">
+                        </a>
+                    </div>
+                    <!--/LOGO-->
+
+                    <!--MENU MOVIL -->
+                    <div class="nav-main-menu-responsive">
+                        <button class="lines-button x">
+                            <span class="lines"></span>
+                        </button>
+                    </div>
+                    <!--/MENU MOVIL -->
+
+                    <!--BUSCAR EN MENÚ -->
+                    <div id="top-search"> <a id="top-search-trigger"><i class="fa fa-search"></i><i class="fa fa-close"></i></a>
+                        <form action="search-results-page.html" method="get" data-toggle="validator">
+                            <input type="text" name="q" id="q" class="form-control" value="" placeholder="Palabra clave + presiona  &quot;Enter&quot;" required>
+                        </form>
+                    </div>
+                    <!--/BUSCAR EN MENÚ -->
+
+                    <!--MENU PRINCIPAL-->
+                    <div class="navbar-collapse collapse main-menu-collapse navigation-wrap">
+                        <div class="container">
+                            <nav id="mainMenu" class="main-menu mega-menu">
+                                <ul class="main-menu nav nav-pills">
+                                    <li class="dropdown mega-menu-item"> <a href="#">Nosotros<i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">INE y el voto en el extranjero</li>
+                                                            <li> <a href="informacion-general.html">Información General</a> </li>
+                                                            <li> <a href="marco-normativo.html">Marco Normativo</a> </li>
+                                                            <li> <a href="reforma-electoral-2014.html">Reforma Electoral 2014</a> </li>
+                                                            <li> <a href="sistema-de-contacto.html">Sistema de Contacto</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Comisión del Voto</li>
+                                                            <li> <a href="#">¿Qué es la Comisión?</a> </li>
+                                                            <li> <a href="#">Informes de la Comisión</a> </li>
+                                                            <li> <a href="#">Calendario de actividades</a> </li>
+                                                            <li> <a href="#">Contacto</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Histórico</li>
+                                                        </ul>
+                                                        <div class="col-md-6">
+                                                            <ul>
+                                                                <li> <a href="#">Procesos electorales anteriores</a> </li>
+                                                                <li> <a href="#">Atlas de resultados</a> </li>
+                                                                <li> <a href="#">Evolución del voto en el extranjero</a> </li>
+                                                                <li> <a href="#">Agradecimientos</a> </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <ul>
+                                                                <li> &nbsp; </li>
+                                                                <li> &nbsp; </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown mega-menu-item"> <a href="credencial-extranjero.html">Credencial de Elector<i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Solicitud de Credencial</li>
+                                                            <li> <a href="#">Conoce el proceso</a> </li>
+                                                            <li> <a href="#">Prepara tus papeles</a> </li>
+                                                            <li> <a href="#">Programa una cita</a> </li>
+                                                            <li> <a href="#">Consulta el estatus</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Activa tu credencial</li>
+                                                            <li> <a href="#">Conoce el proceso</a> </li>
+                                                            <li> <a href="#">Activa tu credencial</a> </li>
+                                                            <li> <a href="#">Preguntas Frecuentes</a> </li>
+                                                            <li> <a href="#">Llama a INETel</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Regístrate a la lista</li>
+                                                            <li> <a href="#">Conoce el trámite</a> </li>
+                                                            <li> <a href="#">Regístrate en línea</a> </li>
+                                                            <li> <a href="#">Elecciones 2018</a> </li>
+                                                            <li> <a href="#">Preguntas Frecuentes</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Vota desde el extranjero</li>
+                                                            <li> <a href="#">Conoce el trámite</a> </li>
+                                                            <li> <a href="#">¿Cómo se vota?</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown mega-menu-item"> <a href="credencial.html">Voto y Elecciones<i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Proceso uno</li>
+                                                            <li> <a href="#">Conoce el proceso</a> </li>
+                                                            <li> <a href="#">Acceso uno</a> </li>
+                                                            <li> <a href="#">Acceso dos</a> </li>
+                                                            <li> <a href="#">Acceso tres</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Proceso dos</li>
+                                                            <li> <a href="#">Conoce el proceso</a> </li>
+                                                            <li> <a href="#">Acceso uno</a> </li>
+                                                            <li> <a href="#">Acceso dos</a> </li>
+                                                            <li> <a href="#">Acceso tres</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Proceso tres</li>
+                                                        </ul>
+                                                        <div class="col-md-6">
+                                                            <ul>
+                                                                <li> <a href="#">Conoce el proceso</a> </li>
+                                                                <li> <a href="#">Acceso uno</a> </li>
+                                                                <li> <a href="#">Acceso dos</a> </li>
+                                                                <li> <a href="#">Acceso tres</a> </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <ul>
+                                                                <li> &nbsp; </li>
+                                                                <li> &nbsp; </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Promueve el voto</a></li>
+                                    <li><a href="noticias.html">Noticias</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--/MENU PRINCIPAL-->
+                </div>
+            </div>
+        </header>
+        <!-- /NCABEZADO -->
+
+
+		<!-- Titulo de la página -->
+        <header class="post-header">
+    <div class="post-hero"></div>
+    <div class="post-overlay"></div>
+    <div class="container">
+      <div class="row wrapper">
+        <div class="col-lg-12">
+          <div class="row information">
+            <div class="col-xl-9 col-lg-8 col-md-8 d-flex">
+              <h1 class="entry-title align-self-center" style="padding-top: 70px; font-size: 34px;">Título de noticia</ítulo></h1>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 d-flex">
+              <div class="meta-data align-self-center" style="padding-top: 15px;">
+                <div class="meta-date meta-box">
+                  <span class="">Publicado el:</span>
+                  <span class="date">26 de Febrero de 2017</span>
+                </div>
+                <div class="meta-category  meta-box">
+                  <span class="">Categoría:</span>
+                  <span class="date"><a href="/category/utp/" rel="category tag">Unidad Técnica de Planeación</a></span>
+                </div>
+                              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+		<!-- /Titulo de la página -->
+
+		<!-- Información de sección -->
+        <section class="background-grey no-margin no-padding">
+            <div class="container">
+                <div class="row p-t-10 p-b-10 indice-seccion">
+                    <div class="col-xs-6 col-sm-8">
+                        <div class="fa-hover p-t-5 p-b-5"><i class="fa fa-map-pin"></i> Tema: <a href="credencial.html">CREDENCIAL DE ELECTOR</a></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="fa-hover p-t-5 p-b-5"><i class="fa fa-map-marker"></i> Área: DERFE y JLYD</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="no-margin">
+        <!-- /Información de sección -->
+<!--Entrada-->
+<section class="content">
+    <div class="container">
+        <div class="row">
+            <div class="post-content post-classic post-content-single col-md-9">
+
+                <div class="post-item">
+                    <div class="post-image">
+                        <a href="#">
+                            <img alt="" src="images/firma-convenio.jpg">
+                        </a>
+                    </div>
+                    <div class="post-content-details">
+                        <div class="post-title">
+                            <h2><font><font>Vivamus luctus commodo dolor porta feugiat</font></font></h2>
+                        </div>
+                        
+                        <div class="post-description">
+                            <p><font><font>Curabitur ante pulvinar euismod, ac ac sagittis ante posuere. </font><font>Vivamus luctus commodo dolor porta feugiat. </font><font>Clínica en el exterior Ligula aljaba et. </font><font>Con el fin de no tener miedo de mi Ullamcorper hendrerit. </font><font>Nulla. </font><font>Directorios pero dis fútbol capa que cualquier bote. </font><font>Lorem ipsum dolor sit amet, elit consectetur adipiscing. </font><font>Identificación del presente dúos dolor, dapibus gesta elit. </font><font>Laoreet hasta la fotografía de tiro. </font><font>El estrés ultricies de dibujos animados de baloncesto. </font><font>Programar los desarrolladores laoreet. </font><font>centro de datos de la metus.M valle</font></font></p>
+                            <blockquote>
+                                <p><font><font>El mundo es un lugar peligroso para vivir; </font><font>no a causa de los que hacen el mal, sino por las personas que no hacen nada al respecto.</font></font></p>
+                                <small><font><font>por </font></font><cite><font><font>Albert Einstein</font></font></cite></small>
+                            </blockquote>
+                            <p><font><font>Lorem ipsum dolor sit amet, elit consectetur adipiscing. </font><font>Identificación del presente dúos dolor, dapibus gesta elit. </font><font>Laoreet hasta la fotografía de tiro. </font><font>El estrés ultricies de dibujos animados de baloncesto. </font><font>Programar los desarrolladores laoreet. </font><font>centro de datos del miedo valle. </font><font>El estrés y la tensión que muchos de los desarrolladores. </font><font>Incluso la ensalada de chile, rejilla vulputate Rendimiento, puerta de entrada planificación de cualquier persona. </font><font>Hasta el suelo, a la parrilla o térmica es decir, dirigida nibh.</font></font></p>
+
+
+                            <p><font><font>Sed temores de bebidas vel. </font><font>Cada fin de semana de luto embarazada. </font><font>A veces hay una, una cama en molestie proteínas, quam felis sollicitudin mauris, que es muy apretado, velita lectus ncp lorem. </font><font>Ya sea suave o relé. </font><font>Lorem ipsum dolor sit amet, elit consectetur adipiscing. </font><font>Relé o para Pakistán. </font><font>Cuando tirones Rayos Super Bowl montañas al instante. </font><font>Sin embargo, la masa tincidunt para tirar. </font><font>Pero con sus flechas, nisl sit amet imperdiet convallis, ahora tortor tincidunt elit nibh, vel molestie que ninguno puede ser no con una cuchara. </font><font>Proin tincidunt Tellus ac porta volutpat. </font><font>Cras Mattis lacus congue este bibendum. </font><font>Más libre para los miembros. </font><font>zanahorias Mecenas UE para la capa.</font></font></p>
+
+                            <p><font><font>La tarea que cualquier fabricación o capa. </font><font>Vulputate graduó por ahora. </font><font>La fabricación de reproductores de flechas deducibles y fabricación en masa. </font><font>Sentarse en la región precio de venta, y varios miembros de fin de semana sapiens. </font><font>Lorem estaba corriendo una región inmobiliario laoreet necesita. </font><font>Dui sit amet lacus rutrum Fusce vitae del valle. </font><font>En tiempos de la vida de Vivamus rhoncus venenatis sit amet metus lectus velita urna.</font></font></p>
+                        </div>
+                    </div>
+                    <div class="post-meta">
+                        <div class="post-date">
+                            <span class="post-date-day"><font><font>16 de </font></font></span>
+                            <span class="post-date-month"><font><font>de enero de </font></font></span>
+                            <span class="post-date-year"><font><font>el año 2015</font></font></span>
+                        </div>
+
+                        <div class="post-comments">
+                            <a href="#">
+                                <i class="fa fa-comments-o"></i>
+                                <span class="post-comments-number">324</span>
+                            </a>
+                        </div>
+                        <div class="post-comments">
+                            <a href="#">
+                                <i class="fa fa-share-alt"></i>
+                                <span class="post-comments-number"><font><font>324</font></font></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="comments" class="comments">
+                    <div class="heading">
+                        <h4 class="comments-title"><font><font>Comentarios </font></font><small class="number"><font><font>(4)</font></font></small></h4>
+                    </div>
+
+
+                    <div class="comment">
+                        <a href="#" class="pull-left">
+                            <img alt="" src="images/avatar.jpg" class="avatar">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading"><font><font>Jesus Santoveña</font></font></h4>
+                            <p class="time"><font><font>25 de Feb de 2015 a las 21:30</font></font></p>
+                            <p><font><font>Mecenas porta iaculis turpis, eget congue Massa. </font><font>Para deducible de tomate baloncesto. </font><font>Nullam nisl dúos, en congue, yo no, dapibus adipiscing metus Sed congue. </font><font>Siempre hasta el maquillaje suave. </font><font>Lorem ipsum dolor sit amet, elit consectetur adipiscing. </font><font>Mecenas sed mujer embarazada justo. </font><font>La última et consectetuer a veces juego de fútbol. </font><font>Y arcos de fútbol se moverá de todo el país.</font></font></p>
+                            <a href="#" class="comment-reply pull-right"><i class="fa fa-reply"></i><font><font> Respuesta</font></font></a>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <a href="#" class="pull-left">
+                            <img alt="" src="images/avatar.jpg" class="avatar">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading"><font><font>Jesus Santoveña</font></font></h4>
+                            <p class="time"><font><font>18 de jan de 2015 a las 22:30</font></font></p>
+                            <p><font><font>Nullam nisl dúos, en congue, yo no, dapibus adipiscing metus Sed congue. </font><font>Siempre hasta el maquillaje suave. </font><font>Lorem ipsum dolor sit amet, elit consectetur adipiscing. </font><font>Mecenas sed mujer embarazada justo. </font><font>La última et consectetuer a veces juego de fútbol. </font><font>Y arcos de fútbol se moverá de todo el país.</font></font></p>
+                            <a href="#" class="comment-reply pull-right"><i class="fa fa-reply"></i><font><font> Respuesta</font></font></a>
+                        </div>
+
+
+
+                        <div class="comment comment-replied">
+                            <a href="#" class="pull-left">
+                                <img alt="" src="images/avatar.jpg" class="avatar">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><font><font>Jesus Santoveña</font></font></h4>
+                                <p class="time"><font><font>24 de Jun de 2015 a las 14:28 PM</font></font></p>
+                                <p><font><font>Para deducible de tomate baloncesto. </font><font>Nullam nisl dúos, en congue, yo no, dapibus adipiscing metus Sed congue. </font><font>Siempre hasta el maquillaje suave. </font><font>Lorem ipsum dolor sit amet, elit consectetur adipiscing. </font><font>Mecenas sed mujer embarazada justo. </font><font>La última et consectetuer a veces juego de fútbol. </font><font>Y arcos de fútbol se moverá de todo el país.</font></font></p>
+                                <a href="#" class="comment-reply pull-right"><i class="fa fa-reply"></i><font><font> Respuesta</font></font></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <a href="#" class="pull-left">
+                            <img alt="" src="images/avatar.jpg" class="avatar">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Jesus Santoveña</h4>
+                            <p class="time"><font><font>24 de Jun de 2015 a las 14:28 PM</font></font></p>
+                            <p><font><font>Siempre hasta el maquillaje suave. </font><font>Lorem ipsum dolor sit amet, elit consectetur adipiscing. </font><font>Mecenas sed mujer embarazada justo. </font><font>La última et consectetuer a veces juego de fútbol. </font><font>Siempre hasta el maquillaje suave. </font><font>Lorem ipsum dolor sit amet, elit consectetur adipiscing. </font><font>Mecenas sed mujer embarazada justo. </font><font>La última et consectetuer a veces juego de fútbol. </font><font>Y arcos de fútbol se moverá de todo el país. </font><font>Y arcos de fútbol se moverá de todo el país. </font><font>Mecenas porta iaculis turpis, eget congue Massa. </font><font>Para deducible de tomate baloncesto. </font><font>Nullam nisl dúos, en congue, yo no, dapibus adipiscing metus Sed congue.</font></font></p>
+                            <a href="#" class="comment-reply pull-right"><i class="fa fa-reply"></i><font><font> Respuesta</font></font></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="comment-form">
+                    <div class="heading">
+                        <h4><font><font>Deja un comentario</font></font></h4>
+                    </div>
+                    <form class="form-gray-fields">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name" class="upper"><font><font>Tu nombre</font></font></label>
+                                    <input type="text" aria-required="true" id="name" placeholder="Enter name" name="senderName" class="form-control required">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="email" class="upper"><font><font>Tu correo electrónico</font></font></label>
+                                    <input type="email" aria-required="true" id="email" placeholder="Enter email" name="senderEmail" class="form-control required email">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="phone" class="upper"><font><font>Su teléfono</font></font></label>
+                                    <input type="text" aria-required="true" id="phone" placeholder="Enter phone" name="phone" class="form-control required">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="comment" class="upper"><font><font>Tu comentario</font></font></label>
+                                    <textarea aria-required="true" id="comment" placeholder="Enter comment" rows="9" name="comment" class="form-control required"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i><font><font>&nbsp;Publicar comentario</font></font></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="sidebar sidebar-modern col-md-3">
+                <!--widget newsletter-->
+                <div class="widget clearfix widget-newsletter">
+                                <form id="widget-subscribe-form-sidebar" action="include/subscribe-form.php" role="form" method="post" class="form-inline" novalidate="novalidate">
+                                    <h4 class="widget-title"><font><font>Hoja informativa</font></font></h4>
+                                    <small><font><font>Manténgase informado de nuestras últimas noticias!</font></font></small>
+                                    <div class="input-group">
+                                        <input type="email" aria-required="true" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+                                        <span class="input-group-btn">
+                  <button type="submit" id="widget-subscribe-submit-button" class="btn btn-primary"><i class="fa fa-paper-plane"></i></button>
+                  </span> </div>
+                                </form>
+                                
+                            </div>
+                <!--end: widget newsletter-->
+
+                <!--widget tweeter-->
+                <div class="widget clearfix widget-tweeter"><font><font>No hay disponibles los tweets</font></font></div>
+                <!--end: widget tweeter-->
+
+                <!--widget tags -->
+                <div class="widget clearfix widget-tags">
+                    <h4 class="widget-title"><font><font>Etiquetas</font></font></h4>
+                    <div class="tags">
+                        <a href="#"><font><font>Diseño </font></font></a>
+                        <a href="#"><font><font>Cartera </font></font></a>
+                        <a href="#"><font><font>Digital </font></font></a>
+                        <a href="#"><font><font>Branding </font></font></a>
+                        <a href="#"><font><font>HTML </font></font></a>
+                        <a href="#"><font><font>limpio </font></font></a>
+                        <a href="#"><font><font>Paz </font></font></a>
+                        <a href="#"><font><font>Amor </font></font></a>
+                        <a href="#"><font><font>CSS3 </font></font></a>
+                        <a href="#"><font><font>jQuery</font></font></a>
+                    </div>
+                </div>
+                <!--end: widget tags -->
+                <!--widget archive-->
+                <div class="widget clearfix widget-archive">
+                    <h4 class="widget-title"><font><font>Archivo</font></font></h4>
+                    <ul class="list list-lines">
+                        <li><font><font>Jun el año 2015 </font></font></li>
+                        <li><font><font>de mayo de 2015 </font></font></li>
+                        <li><font><font>Abr el año 2015 </font></font></li>
+                        <li>Mar 2015 </li>
+                    </ul>
+                </div>
+                <!--end: widget archive-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--/entrada--->
+
+
+
+
+        <hr class="no-margin">
+
+
+        <section class="background-morado text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>¿Necesitas ayuda?</h2>
+                        <h3>Llama sin costo al <strong>01 800 433 2000</strong>. La llamada no tiene costo y puedes realizarla desde cualquier parte del país.</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Puede interesarte:</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- FOOTER -->
+    <footer id="footer">
+    <section class=" background-grey no-margin no-padding">
+    <div class="container">
+    <div class="row">
+    <div class="accordion clean m-t-20">
+    <div class="ac-item">
+    <h4 class="ac-title tit-opinion">¿Todo bien con esta página? Nos gustaría saber tu opinión </h4>
+
+    <div class="ac-content " style="display: none;">
+
+    <div class="col-md-6">
+    <label class="upper" for="name">¿Te ha sido útil la información de la página?</label>
+    <p>
+      <input type="radio" name="1" value="si" id="" aria-label="Si" class="">
+      <span class="m-10">Sí</span>
+      <input type="radio" name="1" value="no" id="" aria-label="No">
+      <span class="m-10">No</span></p>
+    <label class="upper" for="name">Envíanos tus dudas, comentarios y/o sugerencias :</label>
+    <p>
+      <input type="radio" name="2" value="Correo para recibir respuesta" id="group_" aria-label="No" checked="">
+      <span class="m-10">Correo para recibir respuesta</span>
+      <input type="radio" name="2" value="Anónimo" id="" aria-label="Si">
+      <span class="m-10">Anónimo</span> </p>
+
+    </div>
+    <div class="col-md-6">
+      <p>
+        <label class="upper" for="name"> * Correo electrónico </label>
+        <input type="email" class="form-control required" name="senderName" placeholder="Tu correo electrónico" id="name" aria-required="true">
+      </p>
+
+      <p>
+        <label class="upper" for="comment">Envíanos tus comentarios</label>
+        <textarea class="form-control required" name="comment" rows="9" placeholder="Escribe tu comentario" id="comment" aria-required="true"></textarea>
+      </p>
+      <button type="submit" class="btn btn-primary" id="encuesta">Enviar</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <hr class="no-margin">
+    <section class="p-t-30 p-b-0 background-pie" style="background-image:url(images/footer.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="carousel portfolio-basic-image" data-carousel-col="1"> <img alt="image" src="images/blog/1.png"> <img alt="image" src="images/blog/1.png"> <img alt="image" src="images/blog/1.png"> </div>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="widget-title">Páginas Útiles</h6>
+            <ul class="list no-padding listafooter">
+              <li> <a href="#">Contacto</a> </li>
+              <li> <a href="#">Datos personales</a> </li>
+              <li> <a href="#">Preguntas frecuentes</a> </li>
+              <li> <a href="#">Redes sociales</a> </li>
+              <li> <a href="#">Mapa del sitio</a> </li>
+              <li> <a href="#">Creative Commons</a> </li>
+              <li> <a href="#">Accesibilidad</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h6 class="widget-title">Páginas Principales</h6>
+            <ul class="list no-padding listafooter">
+              <li> <a href="#">Sobre INE</a> </li>
+              <li> <a href="#">Comunidad INE </a> </li>
+              <li> <a href="#">Credencial de Elector </a> </li>
+              <li> <a href="#">Voto y Elecciones </a> </li>
+              <li> <a href="#">Voto en el extranjero</a> </li>
+              <li> <a href="#">Transparencia</a> </li>
+              <li> <a href="#">Central Electoral</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="no-margin">
+    <section class="no-margin no-padding">
+      <div class="container">
+        <div class="row text-center p-t-40 p-b-20">
+          <div class="col-sm-4"> 01 800 433 2000
+            <p>Desde cualquier parte del país sin costo</p>
+          </div>
+          <div class="col-sm-4"> 1 (866) 986 8306
+            <p>Desde Estados Unidos sin costo</p>
+          </div>
+          <div class="col-sm-4"> +52 (55) 5481 9897
+            <p>Desde otros países por cobrar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="no-margin">
+    </footer>
+<!-- END: FOOTER -->
+
+</div>
+<!-- END: WRAPPER -->
+
+<!-- GO TOP BUTTON -->
+<a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
+
+	<!-- Theme Base, Components and Settings -->
+	<script src="js/theme-functions.js"></script>
+
+<!-- Custom js file -->
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>

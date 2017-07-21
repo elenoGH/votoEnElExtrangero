@@ -4576,3 +4576,57 @@ body:not(.no-page-loader) .wrapper,
     list-style: outside none none;
     text-align: left;
 }
+/*-----------estilo nota-----*/
+.post-header {
+    position: relative;
+    background-color: #cd1482;
+}
+.post-header .post-hero, .post-header .post-overlay {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-size: cover;
+}
+.post-header .information {
+    min-height: 200px;
+    padding: 40px 0;
+    color: #fff;
+}
+.d-flex {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.post-header .information .entry-title {
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin: 1rem 0;
+    padding-right: 3rem;
+}
+.post-header .entry-title, .post-header .page-title {
+    color: #fff!important;
+}
+.post-header .information {
+    min-height: 200px;
+    padding: 20px 0;
+    color: #fff;
+}
+.meta-box span {
+    display: block;
+}
+.post-header .information .meta-data {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.post-header a {
+    color: #fff;
+}
+.meta-box {
+    margin-bottom: 20px;
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+}
