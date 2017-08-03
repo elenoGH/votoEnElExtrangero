@@ -129,7 +129,7 @@
                                                     <div class="col-md-3">
                                                         <ul>
          <li class="mega-menu-title">INE y el voto en el extranjero</li>
-         <li> <a href="#InformacionGeneral">Información General</a> </li>
+         <li> <a href="ine-y-el-voto-en-el-extranjero.html">Información General</a> </li>
          <li> <a href="#MarcoNormativo">Marco Normativo</a> </li>
          <li> <a href="#ReformaElectoral2014">Reforma Electoral 2014</a> </li>
          <li> <a href="#SistemadeContacto">Sistema de Contacto</a> </li> </ul>
@@ -137,7 +137,7 @@
                                                     <div class="col-md-3">
                                                         <ul>
                   <li class="mega-menu-title">Comisión del Voto</li>
-                  <li> <a href="comision-del-voto.html#QueeslaComision">¿Qué es la Comisión?</a> </li>
+                  <li> <a href="comision-del-voto.html">¿Qué es la Comisión?</a> </li>
                   <li> <a href="comision-del-voto.html#InformesdelaComision">Informes de la Comisión</a> </li>
                   <li> <a href="comision-del-voto.html#Calendariodeactividades">Calendario de actividades</a> </li>
                   <li> <a href="comision-del-voto.html#Contacto">Contacto</a> </li>
@@ -149,7 +149,7 @@
                                                         </ul>
                                                         <div class="col-md-6">
                                                             <ul>
-                                                                <li> <a href="#Procesoselectoralesanteriores">Procesos electorales anteriores</a> </li>
+                                                                <li> <a href="historico.html">Procesos electorales anteriores</a> </li>
                                                                 <li> <a href="#Atlasderesultados">Atlas de resultados</a> </li>
                                                                 <li> <a href="#Evoluciondelvotoenelextranjero">Evolución del voto en el extranjero</a> </li>
                                                                 <li> <a href="#Agradecimientos">Agradecimientos</a> </li>
@@ -270,7 +270,7 @@
         <section id="page-title" class="page-title-parallax text-light" style="background-image:url(images/ine-credencial-elector.jpg);">
             <div class="container">
                 <div class="page-title col-md-8 p-t-70" data-animation="fadeInDown" data-animation-delay="300">
-                    <h2>INE y el voto en el extranjero</h2>
+                    <h2>Histórico</h2>
                 </div>
                 <div data-animation="fadeInDown" data-animation-delay="800">
                     <img alt="" src="images/credencial-encabezado-ve.png">
@@ -300,17 +300,22 @@
             <div class="container">
                 <div class="row p-t-40 p-b-40 ">
                     <div class="col-md-6">
-                        <h2>Bienvenido al trámite para obtener tu credencial para votar con fotografía desde el extranjero.</h2>
-                        <p class="lead">Ya no tienes que viajar a México para tramitar tu Credencial para Votar, el INE, a través de la red de Consulados y Embajadas de la Secretaría de Relaciones Exteriores (SRE), te permite solicitarla desde el país donde resides.</p>
-                         <p>Votar en las elecciones constituye un derecho y una obligación que se ejerce para integrar órganos del Estado de elección popular, y la Credencial para Votar con Fotografía es el documento indispensable para que los ciudadanos puedan ejercer este derecho. </p>
+                        <h2>Voto de los mexicanos residentes en el extranjero.</h2>
+                        <p class="lead">Desde la implementación del Voto de los Mexicanos Residentes en el Extranjero, se han llevado a cabo dos experiencias; te presentamos los resultados de cada uno de los Procesos Electorales Federales y locales</p>
                     </div>
-                    <div class="col-md-6" data-animation="fadeInUp" data-animation-delay="300"><img class="img-responsive m-b-20" alt="credencial desde el extranjero" src="images/img-votoextranjero.jpg"></div>
+                    <div class="col-md-6" data-animation="fadeInUp" data-animation-delay="300"><img class="img-responsive m-b-20 center-block" alt="credencial desde el extranjero" src="images/img-votoextranjero.jpg" width="75%"></div>
                 </div>
             </div>
         </section>
         <hr class="no-margin">
         <!-- /Información de sección -->
-<section id="Atlasderesultados"><div class="container">Atlas de resultados</div></section>
+<section id="Atlasderesultados"><div class="container">Atlas de resultados
+
+<div class="col_half col_last" id="barChart" style="opacity: 0;">
+						<h3 class="center">Votación por candidato a la Presidencia de la República</h3>
+						<canvas id="barChartCanvas" width="747" height="500"></canvas>
+					</div>
+</div></section>
 <section id="Evoluciondelvotoenelextranjero"><div class="container"> Evolucion del voto en el extranjero</div></section>
 
         <!-- PASOS PARA OBTENERLA -->
@@ -707,6 +712,191 @@
 <!-- Custom js file -->
 <script src="js/custom.js"></script>
 
+<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript">
+
+		jQuery(window).load( function(){
+			var lineChartData = {
+				labels : ["January","February","March","April","May","June","July"],
+				datasets : [
+					{
+						fillColor : "rgba(220,220,220,0.5)",
+						strokeColor : "rgba(220,220,220,1)",
+						pointColor : "rgba(220,220,220,1)",
+						pointStrokeColor : "#fff",
+						data : [65,59,90,81,56,55,40]
+					},
+					{
+						fillColor : "rgba(151,187,205,0.5)",
+						strokeColor : "rgba(151,187,205,1)",
+						pointColor : "rgba(151,187,205,1)",
+						pointStrokeColor : "#fff",
+						data : [28,48,40,19,96,27,100]
+					},
+					{
+						fillColor : "rgba(200,147,165,0.5)",
+						strokeColor : "rgba(151,187,205,1)",
+						pointColor : "rgba(151,187,205,1)",
+						pointStrokeColor : "#fff",
+						data : [50,68,17,57,24,96,100]
+					}
+				]
+			};
+
+			var barChartData = {
+				labels : ["FCH","RMP","AMLO","RCC","PMC","NO Reg","Nulos"],
+				datasets : [
+					{
+						fillColor : "#eb008b",
+						strokeColor : "rgb(246,246,246))",
+						data : [58.29,4.17,34,0.39,2.72,0.09,0.34]
+					}
+				]
+
+			};
+
+			var radarChartData = {
+				labels : ["A","B","C","D","E","F","G"],
+				datasets : [
+					{
+						fillColor : "rgba(220,220,220,0.5)",
+						strokeColor : "rgba(220,220,220,1)",
+						pointColor : "rgba(220,220,220,1)",
+						pointStrokeColor : "#fff",
+						data : [65,59,90,81,56,55,40]
+					},
+					{
+						fillColor : "rgba(151,187,205,0.5)",
+						strokeColor : "rgba(151,187,205,1)",
+						pointColor : "rgba(151,187,205,1)",
+						pointStrokeColor : "#fff",
+						data : [28,48,40,19,96,27,100]
+					}
+				]
+
+			};
+
+			var pieChartData = [
+				{
+					value: 30,
+					color:"#F38630"
+				},
+				{
+					value : 50,
+					color : "#E0E4CC"
+				},
+				{
+					value : 100,
+					color : "#69D2E7"
+				},
+				{
+					value : 45,
+					color : "#1E73BE"
+				}
+
+			];
+
+			var polarAreaChartData = [
+				{
+					value : 62,
+					color: "#D97041"
+				},
+				{
+					value : 70,
+					color: "#C7604C"
+				},
+				{
+					value : 41,
+					color: "#21323D"
+				},
+				{
+					value : 24,
+					color: "#9D9B7F"
+				},
+				{
+					value : 55,
+					color: "#7D4F6D"
+				},
+				{
+					value : 18,
+					color: "#584A5E"
+				}
+			];
+
+			var doughnutChartData = [
+				{
+					value: 30,
+					color:"#F7464A"
+				},
+				{
+					value : 50,
+					color : "#46BFBD"
+				},
+				{
+					value : 100,
+					color : "#FDB45C"
+				},
+				{
+					value : 40,
+					color : "#949FB1"
+				},
+				{
+					value : 120,
+					color : "#4D5360"
+				}
+			];
+
+			var globalGraphSettings = {animation : Modernizr.canvas};
+
+			function showLineChart(){
+				var ctx = document.getElementById("lineChartCanvas").getContext("2d");
+				new Chart(ctx).Line(lineChartData,globalGraphSettings);
+			}
+
+			function showBarChart(){
+				var ctx = document.getElementById("barChartCanvas").getContext("2d");
+				new Chart(ctx).Bar(barChartData,globalGraphSettings);
+			}
+
+			function showRadarChart(){
+				var ctx = document.getElementById("radarChartCanvas").getContext("2d");
+				new Chart(ctx).Radar(radarChartData,globalGraphSettings);
+			}
+
+			function showPolarAreaChart(){
+				var ctx = document.getElementById("polarAreaChartCanvas").getContext("2d");
+				new Chart(ctx).PolarArea(polarAreaChartData,globalGraphSettings);
+			}
+
+			function showPieChart(){
+				var ctx = document.getElementById("pieChartCanvas").getContext("2d");
+				new Chart(ctx).Pie(pieChartData,globalGraphSettings);
+			}
+
+			function showDoughnutChart(){
+				var ctx = document.getElementById("doughnutChartCanvas").getContext("2d");
+				new Chart(ctx).Doughnut(doughnutChartData,globalGraphSettings);
+			}
+
+			$('#lineChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showLineChart,300); },{accX: 0, accY: -155},'easeInCubic');
+
+			$('#barChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showBarChart,300); },{accX: 0, accY: -155},'easeInCubic');
+
+			$('#radarChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showRadarChart,300); },{accX: 0, accY: -155},'easeInCubic');
+
+			$('#polarAreaChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showPolarAreaChart,300); },{accX: 0, accY: -155},'easeInCubic');
+
+			$('#pieChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showPieChart,300); },{accX: 0, accY: -155},'easeInCubic');
+
+			$('#doughnutChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showDoughnutChart,300); },{accX: 0, accY: -155},'easeInCubic');
+		});
+
+	</script>
 
 </body>
 </html>
