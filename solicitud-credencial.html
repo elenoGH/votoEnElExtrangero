@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>INE | Instito Nacional Electoral</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="utilidades/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="utilidades/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="utilidades/animateit/animate.min.css" rel="stylesheet">
+
+    <!-- Utilidades css -->
+    <link href="utilidades/owlcarousel/owl.carousel.css" rel="stylesheet">
+    <link href="utilidades/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Estilos css -->
+    <link href="css/base-ine.css" rel="stylesheet">
+    <link href="css/elementos-ine.css" rel="stylesheet">
+    <link href="css/color-ine.css" rel="stylesheet">
+    <link href="css/responsivo.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+    <!-- FUENTES GOOGLE -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+
+    <!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+    <link rel="stylesheet" property="stylesheet" href="utilidades/rs-plugin/css/settings.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/rs-plugin-styles.css" type="text/css" />
+
+    <!--VENDOR SCRIPT-->
+    <script src="utilidades/jquery/jquery-1.11.2.min.js"></script>
+    <script src="utilidades/plugins-compressed.js"></script>
+    
+    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+    <script type="text/javascript" src="utilidades/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="utilidades/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+
+</head>
+
+<body class="wide">
+
+	<!-- WRAPPER -->
+	<div class="wrapper">
+		<!-- TOPBAR -->
+        <div id="topbar" class="">
+            <div class="container">
+                <div class="topbar-dropdown">
+                    <div class="title"><i class="fa fa-newspaper-o"></i>Central Electoral</div>
+                </div>
+                <div class="topbar-dropdown">
+                    <div class="title">Mi perfil es <i class="fa fa-caret-down"></i></div>
+                    <div class="dropdown-list">
+                        <a class="list-entry" href="perfil-extranjero.html">Mexicana(o) en el extranjero</a>
+                        <a class="list-entry" href="perfil-primervotante.html">Primer votante</a>
+                        <a class="list-entry" href="perfil-actorpolitico.html">Actor Político</a>
+                        <a class="list-entry" href="perfil-proveedor.html">Proveedor</a>
+                        <a class="list-entry" href="perfil-estudiante.html">Estudiante</a>
+                        <a class="list-entry" href="perfil-investigacion.html">Investigador o Academia</a>
+                        <a class="list-entry" href="perfil-medios.html">Medio de comunicación</a>
+                    </div>
+                </div>
+
+                <div class="hidden-xs">
+                    <div class="social-icons social-icons-colored-hover">
+                        <ul>
+                            <li class="social-facebook"><a href="https://www.facebook.com/INEMexico/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-twitter"><a href="https://twitter.com/INEMexico" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-youtube"><a href="https://www.youtube.com/user/IFETV" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                            <li class="social-linkedin"><a href="contacto.html"><i class="fa fa-envelope"></i></a></li>
+                            <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /TOPBAR -->
+
+        <!-- ENCABEZADO -->
+        <header id="header" class="">
+            <div id="header-wrap">
+                <div class="container">
+
+                    <!--LOGO-->
+                    <div id="logo">
+                        <a href="index.html" class="logo" data-dark-logo="images/logo-dark.png">
+                            <img src="images/logo.png" alt="Logo INE">
+                        </a>
+                    </div>
+                    <!--/LOGO-->
+
+                    <!--MENU MOVIL -->
+                    <div class="nav-main-menu-responsive">
+                        <button class="lines-button x">
+                            <span class="lines"></span>
+                        </button>
+                    </div>
+                    <!--/MENU MOVIL -->
+
+                    <!--BUSCAR EN MENÚ -->
+                    <div id="top-search"> <a id="top-search-trigger"><i class="fa fa-search"></i><i class="fa fa-close"></i></a>
+                        <form action="search-results-page.html" method="get" data-toggle="validator">
+                            <input type="text" name="q" id="q" class="form-control" value="" placeholder="Palabra clave + presiona  &quot;Enter&quot;" required>
+                        </form>
+                    </div>
+                    <!--/BUSCAR EN MENÚ -->
+
+                    <!--MENU PRINCIPAL-->
+                    <div class="navbar-collapse collapse main-menu-collapse navigation-wrap">
+                        <div class="container">
+                            <nav id="mainMenu" class="main-menu mega-menu">
+                                <ul class="main-menu nav nav-pills">
+                                    <li class="dropdown mega-menu-item"> <a href="#" onclick='javascript:window.location.replace("nosotros.html")'>Nosotros<i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <ul>
+         <li class="mega-menu-title">INE y el voto en el extranjero</li>
+         <li> <a href="ine-y-el-voto-en-el-extranjero.html">Información General</a> </li>
+         <li> <a href="ine-y-el-voto-en-el-extranjero.html#MarcoNormativo">Marco Normativo</a> </li>
+         <li> <a href="ine-y-el-voto-en-el-extranjero.html#ReformaElectoral2014">Reforma Electoral 2014</a> </li>
+         <li> <a href="ine-y-el-voto-en-el-extranjero.html#SistemadeContacto">Sistema de Contacto</a> </li> </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul>
+                  <li class="mega-menu-title">Comisión del Voto</li>
+                  <li> <a href="comision-del-voto.html">¿Qué es la Comisión?</a> </li>
+                  <li> <a href="comision-del-voto.html#InformesdelaComision">Informes de la Comisión</a> </li>
+                  <li> <a href="comision-del-voto.html#Calendariodeactividades">Calendario de actividades</a> </li>
+                  <li> <a href="comision-del-voto.html#Contacto">Contacto</a> </li>
+ </ul>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Histórico</li>
+                                                        </ul>
+                                                        <div class="col-md-6">
+                                                            <ul>
+                                                                <li> <a href="historico.html">Procesos electorales anteriores</a> </li>
+                                                                <li> <a href="historico.html#Atlasderesultados">Atlas de resultados</a> </li>
+                                                                <li> <a href="historico.html#Evoluciondelvotoenelextranjero">Evolución del voto en el extranjero</a> </li>
+                                                                <li> <a href="historico.html#Agradecimientos">Agradecimientos</a> </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <ul>
+                                                                <li> &nbsp; </li>
+                                                                <li> &nbsp; </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown mega-menu-item"> <a href="#" onclick='javascript:window.location.replace("credencial-de-elector.html")'>Credencial de Elector<i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Solicitud de Credencial</li>
+                                                            <li> <a href="credencial-proceso.html">Conoce el proceso</a> </li>
+                                                            <li> <a href="credencial-documentos.html">Prepara tus papeles</a> </li>
+                                                            <li> <a href="#">Programa una cita</a> </li>
+                                                            <li> <a href="#">Consulta el estatus</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Activa tu credencial</li>
+                                                            <li> <a href="credencial-proceso.html">Conoce el proceso</a> </li>
+                                                            <li> <a href="#">Activa tu credencial</a> </li>
+                                                            <li> <a href="#">Preguntas Frecuentes</a> </li>
+                                                            <li> <a href="#">Llama a INETel</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Regístrate a la lista</li>
+                                                            <li> <a href="#">Conoce el trámite</a> </li>
+                                                            <li> <a href="#">Regístrate en línea</a> </li>
+                                                            <li> <a href="#">Elecciones 2018</a> </li>
+                                                            <li> <a href="#">Preguntas Frecuentes</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Vota desde el extranjero</li>
+                                                            <li> <a href="#">Conoce el trámite</a> </li>
+                                                            <li> <a href="#">¿Cómo se vota?</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown mega-menu-item"><a href="credencial.html" onclick='javascript:window.location.replace("voto-y-elecciones.html")'>Voto y Elecciones<i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mega-menu-content" style="background-image: url('images/bg-menu.gif');">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Proceso uno</li>
+                                                            <li> <a href="credencial-proceso.html">Conoce el proceso</a> </li>
+                                                            <li> <a href="#">Acceso uno</a> </li>
+                                                            <li> <a href="#">Acceso dos</a> </li>
+                                                            <li> <a href="#">Acceso tres</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Proceso dos</li>
+                                                            <li> <a href="credencial-proceso.html">Conoce el proceso</a> </li>
+                                                            <li> <a href="#">Acceso uno</a> </li>
+                                                            <li> <a href="#">Acceso dos</a> </li>
+                                                            <li> <a href="#">Acceso tres</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Proceso tres</li>
+                                                        </ul>
+                                                        <div class="col-md-6">
+                                                            <ul>
+                                                                <li> <a href="credencial-proceso.html">Conoce el proceso</a> </li>
+                                                                <li> <a href="#">Acceso uno</a> </li>
+                                                                <li> <a href="#">Acceso dos</a> </li>
+                                                                <li> <a href="#">Acceso tres</a> </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <ul>
+                                                                <li> &nbsp; </li>
+                                                                <li> &nbsp; </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Promueve el voto</a></li>
+                                    <li><a href="noticias.html">Noticias</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--/MENU PRINCIPAL-->
+                </div>
+            </div>
+        </header>
+        <!-- /NCABEZADO -->
+    
+
+		<!-- Titulo de la página -->
+        <section id="page-title" class="page-title-parallax text-light" style="background-image:url(images/ine-credencial-elector.jpg);">
+            <div class="container">
+                <div class="page-title col-md-8 p-t-70" data-animation="fadeInDown" data-animation-delay="300">
+                    <h2>Solicitud de credencial</h2>
+                </div>
+                <div data-animation="fadeInDown" data-animation-delay="800">
+                    <img alt="" src="images/credencial-encabezado-ve.png">
+                </div>
+            </div>
+        </section>
+        <!-- /Titulo de la página -->
+
+        <!-- Información de sección -->
+        <section class="background-grey no-margin no-padding">
+            <div class="container">
+                <div class="row p-t-10 p-b-10 indice-seccion">
+                    <div class="col-xs-6 col-sm-8">
+                        <div class="fa-hover p-t-5 p-b-5"><i class="fa fa-map-pin"></i> Tema: <a href="credencial.html">CREDENCIAL PARA VOTAR</a></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="fa-hover p-t-5 p-b-5"><i class="fa fa-map-marker"></i> Área: DERFE y CAI</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="no-margin">
+        <!-- /Información de sección -->
+
+        <!-- Texto destacado -->
+        <section class="background-grey no-margin no-padding">
+            <div class="container">
+                <div class="row p-t-40 p-b-40 ">
+                    <div class="col-md-6">
+                        <h6>Trámite para obtener tu credencial para votar</h6>
+                        <h2>Ya no tienes que viajar a México para tramitar tu Credencial</h2>
+                        <p class="lead">El INE, a través de la red de Consulados y Embajadas de la Secretaría de Relaciones Exteriores (SRE), te permite solicitarla desde el país donde resides.</p>
+                    </div>
+                    <div class="col-md-6" data-animation="fadeInUp" data-animation-delay="300"><img class="img-responsive m-b-20" alt="credencial desde el extranjero" src="images/img-votoextranjero.jpg"></div>
+                </div>
+            </div>
+        </section>
+        <hr class="no-margin">
+        <!-- /Información de sección -->
+
+        <!-- PASOS PARA OBTENERLA -->
+        <section>
+        	<div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="m-t-20">¿Cómo se tramita la Credencial para Votar desde el extranjero?</h3> <br>
+                        <p class="lead" >El INE, a través de la red de Consulados y Embajadas de la Secretaría de Relaciones Exteriores (SRE), te permite solicitar tu Credencial para Votar desde el país donde resides.</p>
+                        
+                    </div>
+                    <div class="col-md-4 paso">
+                        <h1>1</h1>
+                        
+                        <p>En tu cita debes entregar los <a href="#documentos"> 3 documentos </a> de identificación: De nacionalidad, comprobante de domicilio e identificación con fotografía. Deben ser originales y sin enmendaduras o tachaduras.</p>
+                        <img alt="image" class="img-responsive m-b-40" style="width: 40%;" src="images/mensaje-institucional.jpg">
+                        
+                    </div>
+                    <div class="col-md-4 paso">
+                        <h1>2</h1>
+                       
+                        <p>Llenarán un formato digital con tus datos, capturarán las huellas de todos tus dedos, te tomarán una fotografía digital, digitalizarán tus documentos y deberás firmar en una tableta digital. Con esto termina tu cita en el consulado.</p>
+                        <img alt="image" class="img-responsive m-b-10" style="width: 40%;" src="images/mensaje-institucional.jpg">
+                    
+                    </div>
+                </div>
+                <hr class="no-margin p-b-20">
+                <div class="row">
+                    <div class="col-md-4 paso">
+                        <h1>3</h1>
+                        
+                        <p>Te entregarán un recibo con un número de folio, consérvalo con el podrás verificar el estatus de tu credencial en el sistema de consulta en línea. Es importante verifiques con constancia el estatus para ver si es necesaria alguna aclaración de información.</p>
+                        <img alt="image" class="img-responsive m-b-20" style="width: 40%;" src="images/mensaje-institucional.jpg">
+                    </div>
+                    <div class="col-md-4 paso">
+                        <h1>4</h1>
+                        
+                        <p>En la mayoría de los casos, el trámite se valida rápidamente y se genera tu Credencial, sin embargo, existen razones que requieren un análisis más detallado: Datos personales irregulares, usurpación de identidad o suspensión de derechos políticos.</p>
+                        <img alt="image" class="img-responsive m-b-20" style="width: 40%;" src="images/mensaje-institucional.jpg">
+                    </div>
+                    <div class="col-md-4 paso">
+                    <h1>5</h1>
+                        
+                        <p>Si tus datos se han validado exitosamente, tu Credencial está en producción, con los mismos estándares de calidad y candados de seguridad que la de territorio nacional, por lo que te identifica en tu país de residencia y en México con la misma seguridad y certeza.</p>
+                        <img alt="image" class="img-responsive m-b-20" style="width: 40%;" src="images/mensaje-institucional.jpg">
+  
+                </div>
+                    </div>
+                </div>
+        	</div>
+        </section>
+        <hr class="no-margin">
+        <!-- PASOS PARA OBTENERLA -->
+
+
+               <!-- /DESCRIPCIÓN DOCUMENTOS-->
+        <section id="documentos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        
+                        <p><img alt="image" class="img-responsive m-b-40" src="images/credencial-primera-vez.png"></p>
+                    </div>
+                    <div class="col-md-8 paso m-t-20">
+                        <h2>Documento que acredite la nacionalidad</h2>
+                        <strong>Acta de nacimiento o documento que acredite la nacionalidad mexicana</strong>
+                        <p>El acta de nacimiento sirve para comprobar que eres ciudadana(o) mexicana(o) y que puedes adquirir legalmente derechos de identidad y voto en México.</p>
+                        <p>Si no cuentas con ella puedes hacer tu solicitud de acta de nacimiento en línea a través de los servicios del <a class="uline" href="http://www.registro-civil.com.mx/acta-nacimiento" target="_blank">Registro Civil</a>.</p>               
+
+                    </div>
+                </div>
+                <hr class="no-margin p-t-20 p-b-20">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        
+                        <p><img alt="image" class="img-responsive m-b-40" src="images/credencial-correccion-datos.png"></p>
+                    </div>
+                    <div class="col-md-8 paso m-t-20">
+                        <h2>Identificación con fotografía</h2>
+                        <strong>Puede ser tú Matrícula Consular, Pasaporte o Licencia o permiso para conducir mexicano o expedido en el extranjero.</strong>
+                        <p>Debe ser original y vigente, o con una fecha de expedición no mayor a 10 años, excepto la Cartilla de Servicio Militar Nacional, Cédula Profesional y Credenciales expedidas por el Instituto Nacional de las Personas Adultas Mayores (INAPAM).</p>
+
+                    </div>
+                </div>
+                <hr class="no-margin p-t-20 p-b-20">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <p><img alt="image" class="img-responsive m-b-40" src="images/credencial-cambio-domicilio.png"></p>
+                    </div>
+                    <div class="col-md-8 paso m-t-20">
+                        <h2>Comprobante de domicilio</h2>
+                        <strong>Comprobante de domicilio como un recibo de teléfono, luz, banco, escuela u otros servicios públicos o privados y no es necesario que esté a nombre del titular.</strong>
+                        <p>Este documento debe ser original y con fecha de expedición no mayor a 3 meses, excepto recibos de pago que se expiden de forma anual.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /DESCRIPCIÓN DOCUMENTOS-->
+
+
+
+        <!-- HAZ UNA CITA -->
+        <section class="background-grey no-margin no-padding">
+            <div class="container">
+                <div class="row p-t-40 p-b-40 ">
+                    <div class="col-md-6">
+                        <h6>Programa una cita en la SRE</h6>
+                        <h2>Para el consulado más cercano a tu ciudad</h2>
+                        <p>Para el trámite en Estados Unidos y Canadá programa una cita llamando sin costo a Mexitel al <strong>1-877-MEXITEL (639-4835)</strong>.</p>
+                        <p>Por internet: Desde cualquier país. Prográmala en el <a href="https://mexitel.sre.gob.mx/citas.webportal/pages/public/login/login.jsf" target="_blank"> servicio de citas<i class="fa fa-external-link" aria-hidden="true"></i></a>  de la Secretaría de Relaciones Exteriores.</p>
+                    </div>
+                    <div class="col-md-6" data-animation="fadeInUp" data-animation-delay="300"><img class="img-responsive m-b-20" alt="credencial desde el extranjero" src="images/img-votoextranjero.jpg"></div>
+                </div>
+                <hr class="no-margin p-t-20 p-b-20">
+
+                <div class="row p-t-40 p-b-40 ">
+                    
+                    <div class="col-md-4" data-animation="fadeInUp" data-animation-delay="300"><img class="img-responsive m-b-20" alt="credencial desde el extranjero" src="images/sitio-sre.png"></div>
+                    <div class="col-md-8">
+                        
+                        <h3>Sigue los siguientes pasos:</h3>
+                        <ol type="1">
+                  <li>
+                        Utilizar el portal de citas de la SRE requiere crear una cuenta, con nombre completo, teléfono, correo electrónico y una contraseña. Si ya la tienes, ingresa con ella. 
+                    </li>
+                    <li>
+                        Al llenar los datos que te solicitan (país, código postal, oficina, el tipo de trámite y tus datos personales) y dar clic en el botón “Buscar citas”, el sistema te dará la información del consulado que te corresponde. 
+                    </li>
+                    <li>
+                        Aparecerá un calendario con la cantidad de citas disponibles para cada día. 
+                    </li>
+                    <li>
+                        Elige la fecha y horario de tu preferencia.
+                    </li>
+                    <li>
+                        Consulta tu cita en la sección de Consultar citas, imprímela o ten a la mano el número asignado para asistir al Consulado. 
+                    </li>
+                    <li>
+                        Para hacer cambios o cancelar tu cita, accede a la sección de Consultar citas. 
+                  </li>
+                </ol>
+                <p>
+                    <a href="#" target="_blank"><strong>Conoce los consulados donde puedes obtener la credencial en tu ciudad.</strong></a>
+                </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="no-margin">
+        <!-- HAZ UNA CITA -->
+
+
+<!--CONSULTA EL ESTATUS - Horizontal tabs colored -->
+        <section>
+            <div class="container">
+                <div class="row">
+<div id="tabs-05c" class="tabs color">
+                    <h3>Horizontal tabs (with color)</h3>
+                    <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat luptatem.</p>
+                    <ul class="tabs-navigation">
+                        <li class="active"><a href="#validacion"><i class="fa fa-list-ul"></i>Validación del trámite</a> </li>
+                        <li class=""><a href="#produccion"><i class="fa fa-cog"></i>Producción de Credencial</a> </li>
+                        <li class=""><a href="#distribucion"><i class="fa fa-paper-plane-o"></i>Distribución</a> </li>
+                        <li class=""><a href="#activacion"><i class="fa fa-check-square-o"></i>Activa tu Credencial</a> </li>
+                        <li class=""><a href="#finalizado"><i class="fa fa-thumbs-o-up"></i>Trámite finalizado</a> </li>
+                    </ul>
+                    <div class="tabs-content">
+                    <!--1 Validadión-->
+                        <div class="tab-pane active" id="validacion">
+                   
+                    <p>En cada trámite, el INE realiza una validación de los datos que proporcionaste al momento de solicitar tu Credencial, de esta forma se garantiza que en el Padrón Electoral se incorpore un solo registro por cada ciudadano o ciudadana, y que cumpla con los requisitos establecidos.</p>
+                    <p>En la mayoría de los casos, el trámite se valida rápidamente y se genera tu Credencial, sin embargo, existen razones que requieren un análisis más detallado:</p>
+                    <ul>
+                        <li> <p><strong>Datos Personales Presuntamente Irregulares.</strong> En este caso, el sistema de validación de datos personales encontró un registro en el Padrón Electoral, con datos personales muy parecidos a los tuyos, por lo que debemos corroborar la información correcta contigo y determinar su procedencia antes de la generación de la Credencial.</p></li>
+                        <li><p><strong>Usurpación de Identidad.</strong> Al analizar tu foto, el sistema de validación de identidad identificó un registro con tus datos personales, pero con fotografías diferentes, por lo que podría tratarse de una usurpación de identidad, ante ello, debemos realizar el análisis de la información contigo y determinar cuál es la correcta para la generación de la Credencial.</p></li>
+                    </ul>
+                    <p>En ambos casos, al ingresar al Sistema de Consulta, tu trámite aparecerá con el estatus de validación por Análisis Registral y te pediremos nos contestes un pequeño cuestionario que nos ayudará a verificar tus datos. O bien, te solicitaremos documentación complementaria para validar la información.</p>
+                    <ul>
+                        <li>
+                            <strong>Suspensión de Derechos Políticos.</strong> En este caso, los datos que nos proporcionaste presentan una orden judicial que te suspende los derechos político-electorales, por lo que es necesario contar con la sentencia o la documentación mediante la cual se rehabilitan tus derechos político–electorales y así generar tu Credencial para Votar.
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Toma nota:</strong> Cuando tu trámite se encuentre en <strong>validación por Análisis Registral</strong>, sigue estos pasos:
+                    </p>
+                    <ul>
+                        <li>En el <a href="http://www.ine.mx/archivos2/portal/credencial/tramite/" class="subrayar_a">Sistema de Consulta del estatus de tu Credencial para Votar</a> verifica tu estatus y sigue los pasos que se indican en la sección.</li>
+                        <li>Toma en consideración los avisos y periodos que se te presentan y realiza las acciones que te piden.</li>
+                        <li>Cuentas con cinco días para proporcionar la información que se te solicita.</li>
+                        <li>Para el caso de suspensión de derechos políticos, pueden ser 8 o 20 días de acuerdo a la situación en que te encuentres.</li>
+                        <li>Si necesitas ayuda llama a INETEL 1(866) 986-8306.</li>
+                    </ul>
+                    <p><strong>Otras causas por las que puede detenerse un trámite</strong></p>
+                    <p>Si no has recibido tu Credencial para Votar, tu trámite pudo ser detenido también si la documentación que entregaste presentó alguna inconsistencia:</p>
+                    <ul>
+                        <li><strong>PO Box como comprobante de domicilio</strong>, lo cual imposibilita la entrega de tu Credencial para Votar de manera personal. Requerimos un comprobante de un domicilio válido donde puedas recibir la credencial de manera presencial, previa identificación.</li>
+                        <li><strong>Correspondencia personal dirigida a otro nombre.</strong>  Cuando se trata de correspondencia personal, es decir que no es comercial, ésta debe estar a tu nombre para ser válida.</li>
+                        <li><strong>Si algún documento que presentaste tiene tachaduras o enmendaduras o algún dato no visible.</strong></li>
+                    </ul>
+                    <p>En cualquiera de estos casos el INE te ayuda a solucionarlo, enviando tu información mediante una Solicitud de Expedición de Credencial para Votar desde el extranjero, descárgala <a href="/documentos/formato-secpve-extranjero.pdf" target="_blank">aquí</a> o llama a INETEL 1(866) 986-8306 y con gusto te orientaremos al respecto.</p>
+               
+
+                        </div>
+                        <!--2 Producción de credencial-->
+                        <div class="tab-pane" id="produccion">
+                          
+                            <p>Tus datos se han validado exitosamente y tu Credencial se encuentra en producción. La Credencial para Votar desde el Extranjero se produce con los mismos estándares de calidad y candados de seguridad que la de territorio nacional, por lo que te identifica en tu país de residencia y en México con la misma seguridad y certeza. En breve la recibirás en tu domicilio a través de servicio de mensajería. Accede al Sistema de Consulta del estatus de tu Credencial para Votar, para más información.</p>
+                        </div>
+
+                        <!--3 distribución-->
+                        <div class="tab-pane" id="distribucion">
+                            <p>Tu Credencial ya está en camino, espérala en el domicilio que diste al momento de hacer tu trámite. Accede al Sistema de Consulta del estatus de tu Credencial para Votar para rastrearla y saber cuándo te llegará.</p>
+
+                            <p>El trámite de la Credencial para Votar es único e intransferible por lo que únicamente tú puedes recibirla con previa identificación. Por ello, asegúrate de proporcionar correctamente tu domicilio en el consulado.</p>
+
+                            <p>Si no puedes recibirla, ya sea por incompatibilidad de horarios u otra causa, informa a la empresa de mensajería el domicilio o el horario que más te convenga, siempre y cuando seas tú quien la reciba y firme por ella.</p>
+
+                            <p>Después de tres intentos de entrega, tu Credencial estará disponible hasta 30 días en la oficina más cercana a tu domicilio (Servicio Ocurre). Si no la recoges en este plazo, se regresará a México y deberás acceder al Sistema de Consulta y solicitar que sea enviada nuevamente.</p>
+                        </div>                        
+
+                        <!--4 Activación-->
+                        <div class="tab-pane" id="activacion">
+                            <p>Sabemos que ya recibiste tu Credencial, pero necesitamos confirmar que tú la recibiste a fin de evitar que le den mal uso. Además, al activarla será válida para que puedas votar e identificarte.</p>
+
+                            <p>Activarla es muy sencillo, ten a la mano tu Credencial y tu recibo del consulado e ingresa al Sistema de Consulta del estatus de tu Credencial para Votar ,llena el formulario con los datos solicitados y... ¡Listo!</p>
+                        </div>
+
+                        <!--5 trámite finalizado-->
+                        <div class="tab-pane" id="finalizado">
+                            <h4>Trámite finalizado</h4>
+                            <p>Si tienes duda si tu credencial quedó activada o no recuerdas si ya lo hiciste, ingresa al Sistema de Consulta del estatus de tu Credencial para Votar y si la etapa que muestra es ésta, significa que tu trámite conluyó con éxito y podrás votar en una próxima elección ya que estás incluido en la Lista Nominal de Electores Residentes en el Extranjero.</p>
+                        </div>
+                    </div>
+                </div>
+                     </div>
+        </section>
+
+<!--CONSULTA EL ESTATUS - END of Horizontal tabs colored -->
+
+        
+
+        <!-- Accesos a secciones detacadas -->
+        <section class="background-grey">
+            <div class="container">
+                <div class="row m-b-20">
+                    <div class="col-md-4">
+                        <h6 class="no-margin">Sección dedicada</h6>
+                        <h3 class="m-b-20"><a href="credencial-video-encabezado.html">Acceso a sección destacada</a> </h3>
+                        <p>Ya no tienes que viajar a México para tramitar tu Credencial para Votar, el INE, a través de la red de Consulados y Embajadas de la Secretaría de Relaciones Exteriores (SRE), te permite solicitarla desde el país donde resides.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="no-margin">Sección dedicada</h6>
+                        <h3 class="m-b-20"><a href="credencial-documentos.html">Acceso a sección destacada</a> </h3>
+                        <p>Ya no tienes que viajar a México para tramitar tu Credencial para Votar, el INE, a través de la red de Consulados y Embajadas de la Secretaría de Relaciones Exteriores (SRE), te permite solicitarla desde el país donde resides.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="no-margin">Sección dedicada</h6>
+                        <h3 class="m-b-20"><a href="credencial-video.html">Acceso a sección destacada</a> </h3>
+                        <p>Ya no tienes que viajar a México para tramitar tu Credencial para Votar, el INE, a través de la red de Consulados y Embajadas de la Secretaría de Relaciones Exteriores (SRE), te permite solicitarla desde el país donde resides.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Accesos a secciones detacadas -->
+        <hr class="no-margin">
+
+         <!-- Destacadas sección -->
+        <section class="no-padding">
+            <div class="container m-t-40 m-b-40">
+                <h3 class="no-margin p-b-40">Información destacada</h3>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="card-item" data-animation="fadeInUp" data-animation-delay="0">
+                            <img alt="" src="images/cards/card-1.png">
+                            <div class="contenido">
+                                <h4>Acceso principal a nota destacada sobre este tema</h4>
+                                <p>Texto corto de descripción para informar sobre el contexto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-item" data-animation="fadeInUp" data-animation-delay="100">
+                            <img alt="" src="images/cards/card-2.png">
+                            <div class="contenido">
+                                <h4>Acceso principal a nota destacada sobre este tema</h4>
+                                <p>Texto corto de descripción para informar sobre el contexto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-item" data-animation="fadeInUp" data-animation-delay="200">
+                            <img alt="" src="images/cards/card-3.png">
+                            <div class="contenido">
+                                <h4>Acceso principal a nota destacada sobre este tema</h4>
+                                <p>Texto corto de descripción para informar sobre el contexto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Destacadas sección -->
+        
+        <section class="background-morado text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>¿Necesitas ayuda?</h2>
+                    <h4>Llámanos:</h4>
+                    <ul class="list-unstyled">
+                    <li>Desde cualquier parte del país sin costo: <br><strong>01 800 433 2000</strong> </li>
+                    <li>Desde Estados Unidos sin costo: <br> <strong>1 (866) 986 8306 </strong></li>
+                    <li>Desde otros países por cobrar: <br> <strong>+52 (55) 5481 9897 </strong></li>
+                    </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Síguenos en facebook</h4>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVoto.Extranjero.MX&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Síguenos en Twitter</h4>
+                        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="es"><p lang="es" dir="ltr">En estos momentos se firma el convenio de colaboración entre el <a href="https://twitter.com/INEMexico">@INEMexico</a>, <a href="https://twitter.com/CasaPueblaNY">@CasaPueblaNY</a> y <a href="https://twitter.com/hashtag/FuerzaMigrante?src=hash">#FuerzaMigrante</a> <a href="https://t.co/eaq1THBwVs">pic.twitter.com/eaq1THBwVs</a></p>&mdash; Voto Extranjero (@VotoExtranjero) <a href="https://twitter.com/VotoExtranjero/status/880812465872936962">30 de junio de 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <footer id="footer">
+        <section class=" background-grey no-margin no-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="accordion clean m-t-20">
+                        <div class="ac-item">
+                            <h4 class="ac-title tit-opinion">¿Todo bien con esta página? Nos gustaría saber tu opinión </h4>
+                            <div class="ac-content " style="display: none;">
+
+                                <div class="col-md-6">
+                                    <label class="upper" for="name">¿Te ha sido útil la información de la página?</label>
+                                    <p>
+                                      <input type="radio" name="1" value="si" id="" aria-label="Si" class="">
+                                      <span class="m-10">Sí</span>
+                                      <input type="radio" name="1" value="no" id="" aria-label="No">
+                                      <span class="m-10">No</span>
+                                    </p>
+                                    <label class="upper" for="name">Envíanos tus dudas, comentarios y/o sugerencias :</label>
+                                    <p>
+                                      <input type="radio" name="2" value="Correo para recibir respuesta" id="group_" aria-label="No" checked="">
+                                      <span class="m-10">Correo para recibir respuesta</span>
+                                      <input type="radio" name="2" value="Anónimo" id="" aria-label="Si">
+                                      <span class="m-10">Anónimo</span>
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                  <p>
+                                    <label class="upper" for="name"> * Correo electrónico </label>
+                                    <input type="email" class="form-control required" name="senderName" placeholder="Tu correo electrónico" id="name" aria-required="true">
+                                  </p>
+                                  
+                                  <p>
+                                    <label class="upper" for="comment">Envíanos tus comentarios</label>
+                                    <textarea class="form-control required" name="comment" rows="9" placeholder="Escribe tu comentario" id="comment" aria-required="true"></textarea>
+                                  </p>
+                                  <button type="submit" class="btn btn-primary" id="encuesta">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="no-margin">
+        <section class="p-t-30 p-b-0 background-pie">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-10"><img class="img-responsive" src="images/footer-img.png"></div>
+
+              <div class="col-sm-2">
+                <h6 class="widget-title">Páginas Útiles</h6>
+                <ul class="list no-padding listafooter">
+                  <li> <a href="credencial-video-encabezado.html">Nosotros</a> </li>
+                  <li> <a href="credencial-proceso.html">Credencial de elector</a> </li>
+                  <li> <a href="credencial-video.html">Voto y elecciones</a> </li>
+                  <li> <a href="credencial-documentos.html">Promueve el voto</a> </li>
+                  <li> <a href="noticias.html">Noticias</a> </li>
+                  <li> <a href="http://www.ine.mx/" target="_blank">ine</a> </li>
+                  <li> <a href="http://centralelectoral.ine.mx/" target="_blank">central electoral</a> </li>
+                  <li> <a href="https://www.gob.mx/sre" target="_blank">SRE</a> </li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <hr class="no-margin">
+<!-- subfooter -->
+<section class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+            <div class="d-flex align-items-start justify-content-center">
+              <div class="contact-phone">
+                <h4>INE</h4>
+                <p>© Derechos Reservados, Instituto Nacional Electoral, México.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="d-flex align-items-start justify-content-center">
+              <div class="contact-phone">
+                <h4>Oficinas Centrales:</h4>
+                <p>Viaducto Tlalpan No. 100 Col. Arenal Tepepan, Delegación Tlalpan, C.P. 14610, Ciudad de México.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5">
+            <div class="d-flex align-items-start justify-content-center">
+              <div class="contact-phone">
+                <h4>Llámanos:</h4>
+                <p>Desde cualquier parte del país sin costo: <strong>01 800 433 2000.</strong><br>
+                  Desde Estados Unidos sin costo: <strong>1 (866) 986 8306.</strong><br>
+                  Desde otros países por cobrar: <strong>+52 (55) 5481 9897.</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+        <hr class="no-margin">
+        </footer>
+<!-- END: FOOTER -->
+
+</div>
+<!-- END: WRAPPER -->
+
+<!-- GO TOP BUTTON -->
+<a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
+
+	<!-- Theme Base, Components and Settings -->
+	<script src="js/theme-functions.js"></script>
+
+<!-- Custom js file -->
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>
+
+
+
