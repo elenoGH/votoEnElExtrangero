@@ -4492,4 +4492,26 @@ body:not(.no-transition) #wrapper,
 	margin:0!important;
 	padding:0!important
 }
-
+.play-button {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 50%;
+}
+.play-button>i {
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 2px;
+    transform: translateY(-50%) translateX(-50%);
+}
+.play-button, .play-button:hover {
+    transition: all .4s cubic-bezier(.19,1,.22,1) 0s;
+}
