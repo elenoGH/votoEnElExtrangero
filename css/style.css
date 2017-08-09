@@ -4515,3 +4515,6 @@ body:not(.no-transition) #wrapper,
 .play-button, .play-button:hover {
     transition: all .4s cubic-bezier(.19,1,.22,1) 0s;
 }
+
+footer {margin-top:0px !important;
+	}
